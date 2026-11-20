@@ -1,0 +1,551 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Personal portfolio of a software engineering student and full-stack web developer.">
+
+    <title>Portfolio | Software Developer</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header class="header">
+        <nav class="navbar container">
+
+            <a href="#home" class="logo">PORTFOLIO<span>.</span></a>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#journey">Learning Journey</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#research">Research</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <button id="themeToggle" aria-label="Toggle theme">☀</button>
+                <button class="menu-toggle" id="menuToggle" aria-label="Open menu">☰</button>
+            </div>
+
+        </nav>
+    </header>
+
+
+    <main>
+
+        <!-- Hero Section -->
+        
+<!-- Hero Section -->
+<section class="hero" id="home">
+
+    <div class="container hero-content">
+
+        <!-- Left Side: Text Content -->
+        <div class="hero-copy">
+
+            <p class="hero-status">
+                <span class="status-dot"></span>
+                SYSTEM ACTIVE
+            </p>
+
+            <p class="hero-intro">
+                HELLO, WORLD. I'M A DEVELOPER.
+            </p>
+
+            <h1>
+                Building Beyond
+                <span>Possible.</span>
+            </h1>
+
+            <p class="hero-description">
+                I design intelligent software experiences,
+                interfaces, and products that transform ideas
+                into real-world impact.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="#projects" class="btn btn-primary">
+                    Explore My Work →
+                </a>
+
+                <a href="#about" class="btn btn-secondary">
+                    About Me
+                </a>
+
+            </div>
+
+            <div class="hero-bottom">
+                <span>BUILDING THE NEXT VERSION IN PUBLIC</span>
+                <span>SOFTWARE ENGINEERING</span>
+            </div>
+
+        </div>
+
+
+        <!-- Right Side: Animated Portrait -->
+        <div class="hero-visual">
+
+            <div class="hero-glow"></div>
+
+            <div class="hero-portrait-frame">
+
+                <picture>
+                    <source
+                        media="(max-width: 768px)"
+                        srcset="assets/images/base_mobile9by16.png">
+
+                    <img
+                       src="assets/images/base16by9.jpeg"
+                        alt="Developer portrait"
+                        class="hero-portrait">
+                </picture>
+
+                <!-- Mobile reveal image -->
+                <img
+                    src="assets/images/reveal_mobile9by16.png"
+                    alt=""
+                    class="hero-reveal-image">
+
+            </div>
+
+            <div class="hero-image-label">
+                <span class="status-dot"></span>
+                AVAILABLE FOR INNOVATION
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+        <!-- About Section -->
+        <section class="section" id="about">
+            <div class="container">
+
+                <p class="section-label">// 01.PROFILE</p>
+                <h2>About Me</h2>
+
+                <div class="about-content">
+                    <div class="about-text">
+                        <h3>Abdulla Al Nafi</h3>
+
+                        <p class="about-role">
+                            Software Engineering Student & Full Stack Web Developer
+                        </p>
+
+                        <p>
+                            I am passionate about building real-world software
+                            solutions, developing modern web applications,
+                            and exploring innovative technologies.
+                        </p>
+
+                        <p>
+                            My interests include software engineering,
+                            problem solving, full-stack development,
+                            and research.
+                        </p>
+                    </div>
+
+                    <div class="about-highlights">
+                        <div class="highlight-card">
+                            <h3>01</h3>
+                            <p>Software Engineering Student</p>
+                        </div>
+
+                        <div class="highlight-card">
+                            <h3>02</h3>
+                            <p>Full Stack Development</p>
+                        </div>
+
+                        <div class="highlight-card">
+                            <h3>03</h3>
+                            <p>Software Engineering Research</p>
+                        </div>
+
+                        <div class="highlight-card">
+                            <h3>04</h3>
+                            <p>Problem Solving</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- Skills Section -->
+        <section class="section" id="skills">
+            <div class="container">
+
+                <p class="section-label">// 04.COMPETENCY METRICS</p>
+                <h2>Skills & Technical Proficiency</h2>
+
+                <div class="skill-categories">
+                    <button class="skill-tab active" data-category="programming">Programming</button>
+                    <button class="skill-tab" data-category="frontend">Frontend</button>
+                    <button class="skill-tab" data-category="backend">Backend</button>
+                    <button class="skill-tab" data-category="database">Database</button>
+                    <button class="skill-tab" data-category="soft">Soft Skills</button>
+                </div>
+
+                <div class="skills-list" id="skillsList"></div>
+
+            </div>
+        </section>
+
+
+        <!-- Projects Section -->
+        <section class="section" id="projects">
+            <div class="container">
+
+                <p class="section-label">// 05.PORTFOLIO WORK</p>
+                <h2>Featured Projects</h2>
+
+                <input
+                    type="search"
+                    id="projectSearch"
+                    class="project-search"
+                    placeholder="Search projects..."
+                >
+
+                <div class="project-filters">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="fullstack">Full Stack</button>
+                    <button class="filter-btn" data-filter="ai">AI & ML</button>
+                    <button class="filter-btn" data-filter="mobile">Mobile & Web</button>
+                    <button class="filter-btn" data-filter="systems">Systems & Tools</button>
+                </div>
+
+                <div class="projects-grid" id="projectsGrid"></div>
+
+            </div>
+        </section>
+
+
+        <!-- Learning Journey -->
+        <section class="section" id="journey">
+            <div class="container">
+
+                <p class="section-label">// 04.DEVELOPMENT JOURNEY</p>
+                <h2>Learning Journey</h2>
+
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <span>2023 — PRESENT</span>
+                        <h3>Software Engineering Student & Independent Developer</h3>
+                        <p>
+                            Exploring software development, building practical
+                            projects, learning modern technologies, and
+                            developing problem-solving skills.
+                        </p>
+
+                        <div class="tech-tags">
+                            <span>JavaScript</span>
+                            <span>TypeScript</span>
+                            <span>React</span>
+                            <span>Next.js</span>
+                            <span>Node.js</span>
+                            <span>PostgreSQL</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+<!-- Education -->
+<section class="section" id="education">
+    <div class="container">
+
+        <p class="section-label">// 07.ACADEMIC BACKGROUND</p>
+        <h2>Education & Academic Standing</h2>
+
+        <div class="education-list">
+
+            <!-- UNIVERSITY -->
+            <div class="education-card education-card--school">
+
+                <div class="education-photo">
+                    <div class="education-photo-placeholder">
+                        <span class="photo-icon">▧</span>
+                        <span>Daffodil International University</span>
+                        <small>University Photograph</small>
+                    </div>
+
+                    <img
+                        src="assets/images/daffodil-international-university.jpg"
+                        alt="Daffodil International University, Dhaka"
+                        loading="lazy"
+                    >
+                </div>
+
+                <div class="education-content">
+
+                    <span class="qualification-badge">UNIVERSITY</span>
+
+                    <h3>Daffodil International University</h3>
+                    <p class="education-location">Dhaka, Bangladesh</p>
+
+                    <h4>B.Sc. in Software Engineering</h4>
+
+                    <p>Department of Software Engineering</p>
+
+                    <h3>CGPA: 3.50</h3>
+
+                    <span>Undergraduate Student — Currently Enrolled</span>
+
+                    <h4>Relevant Coursework</h4>
+
+                    <div class="tech-tags">
+                        <span>Desktop & Web Programming</span>
+                        <span>System Analysis & Design Capstone Project</span>
+                        <span>SQL Management</span>
+                        <span>Database Management</span>
+                        <span>Web Engineering</span>
+                        <span>Software Testing</span>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <!-- HSC -->
+            <div class="education-card education-card--school education-reveal">
+
+                <div class="education-photo">
+                    <div class="education-photo-placeholder">
+                        <span class="photo-icon">▧</span>
+                        <span>Royal Media College</span>
+                        <small>Institution Photograph</small>
+                    </div>
+
+                    <img
+                        src="assets/images/royal-media-college.jpg"
+                        alt="Royal Media College, Mymensingh"
+                        loading="lazy"
+                    >
+                </div>
+
+                <div class="education-content">
+
+                    <span class="qualification-badge">HSC</span>
+
+                    <h3>Royal Media College</h3>
+                    <p class="education-location">Mymensingh, Bangladesh</p>
+
+                    <h4>Higher Secondary Certificate (HSC)</h4>
+
+                    <div class="academic-details">
+
+                        <div class="academic-detail">
+                            <span>Education Board</span>
+                            <strong>Mymensingh</strong>
+                        </div>
+
+                        <div class="academic-detail">
+                            <span>Group</span>
+                            <strong>Science</strong>
+                        </div>
+
+                        <div class="academic-detail">
+                            <span>Passing Year</span>
+                            <strong>2023</strong>
+                        </div>
+
+                    </div>
+
+                    <div class="gpa-container">
+                        <span>Academic GPA</span>
+                        <strong>3.83 <small>/ 5.00</small></strong>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <!-- SSC -->
+            <div class="education-card education-card--school education-reveal">
+
+                <div class="education-photo">
+                    <div class="education-photo-placeholder">
+                        <span class="photo-icon">▧</span>
+                        <span>Progressive Model School</span>
+                        <small>Institution Photograph</small>
+                    </div>
+
+                    <img
+                        src="assets/images/progressive-model-school.jpg"
+                        alt="Progressive Model School, Mymensingh"
+                        loading="lazy"
+                    >
+                </div>
+
+                <div class="education-content">
+
+                    <span class="qualification-badge">SSC</span>
+
+                    <h3>Progressive Model School</h3>
+                    <p class="education-location">Mymensingh, Bangladesh</p>
+
+                    <h4>Secondary School Certificate (SSC)</h4>
+
+                    <div class="academic-details">
+
+                        <div class="academic-detail">
+                            <span>Education Board</span>
+                            <strong>Mymensingh</strong>
+                        </div>
+
+                        <div class="academic-detail">
+                            <span>Group</span>
+                            <strong>Science</strong>
+                        </div>
+
+                        <div class="academic-detail">
+                            <span>Passing Year</span>
+                            <strong>2021</strong>
+                        </div>
+
+                    </div>
+
+                    <div class="gpa-container">
+                        <span>Academic GPA</span>
+                        <strong>4.72 <small>/ 5.00</small></strong>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+       
+
+        <!-- Research Interests -->
+        <section class="section" id="research">
+            <div class="container">
+
+                <p class="section-label">// 06.ACADEMIC INTERESTS</p>
+                <h2>Research Interests</h2>
+
+                <div class="research-card">
+                    <h3>Software Engineering Research & Human-Computer Interaction</h3>
+
+                    <p>Ongoing Work — 2026</p>
+                    <p>Role: Aspiring Student Researcher</p>
+
+                    <div class="tech-tags">
+                        <span>Software Engineering</span>
+                        <span>Full Stack Design</span>
+                        <span>Web Architecture</span>
+                        <span>Human-Computer Interaction</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- Learning and Growth -->
+        <section class="section" id="growth">
+            <div class="container">
+
+                <p class="section-label">// 06.SKILL BUILDING</p>
+                <h2>Learning & Development</h2>
+
+                <p>
+                    Continuously exploring modern technologies,
+                    improving development skills, and learning
+                    through practical implementation.
+                </p>
+
+                <h3>// 07.CONTINUOUS GROWTH</h3>
+                <h2>Current Focus & Growth</h2>
+
+                <div class="tech-tags">
+                    <span>Continuous Learning</span>
+                    <span>Problem Solving</span>
+                    <span>Software Development</span>
+                    <span>Software Architecture</span>
+                    <span>Real-world Projects</span>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- Contact -->
+        <section class="section" id="contact">
+            <div class="container">
+
+                <p class="section-label">// 07.CONTACT & SOCIALS</p>
+                <h2>Get In Touch</h2>
+
+                <p>
+                    Have a project idea or want to connect?
+                    Feel free to reach out.
+                </p>
+
+                <div class="contact-email">
+                    <span id="emailAddress">251-35-426@dui.edu.bd</span>
+                    <button id="copyEmail">Copy Email</button>
+                </div>
+
+                <div class="social-links">
+                    <a href="#" target="_blank">GitHub</a>
+                    <a href="#" target="_blank">Facebook</a>
+                    <a href="#" target="_blank">Instagram</a>
+                    <a href="#" target="_blank">Telegram</a>
+                </div>
+
+                <a href="assets/resume/resume.pdf" class="btn btn-primary" download>
+                    Download Resume
+                </a>
+
+            </div>
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+
+            <p>© 2026 Portfolio. All Rights Reserved.</p>
+
+            <button id="backToTop">↑ Back to Top</button>
+
+        </div>
+    </footer>
+
+
+    <!-- JavaScript -->
+    <script src="js/theme.js"></script>
+    <script src="js/navigation.js"></script>
+    <script src="js/projects.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+</html>
